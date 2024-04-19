@@ -4,10 +4,6 @@
         <p class="t1">Order Restaurant food, takeaway and groceries.</p>
         <h1 class="t2">Feast Your Senses,</h1>
         <h1 class="t3">Fast and Fresh</h1>
-        <div class="mobile">
-            <a><img class="mobile-store" src="../../../assets/app_store.png"></a>
-            <a><img class="mobile-store" src="../../../assets/google-play-badge.png"></a>
-        </div>
     </div>
 
     <div class="people">
@@ -17,22 +13,38 @@
     <div class="wrapper"></div>
 
     <div class="notifications">
-
-        <!-- <div class="card">
-            <div class="card-top">
-                <img class="logo" src="../../../assets/logo.png">
-                <span>now</span>
-            </div>
-            <div class="card-bottom">
-                <span>Your rider's nearby</span>
-                <span>They're almost there - get ready!</span>
-            </div>
-        </div> -->
-        
         <img class="note1" src="../../../assets/note1.png">
         <img class="note2" src="../../../assets/note2.png">
         <img class="note3" src="../../../assets/note3.png">
     </div>
     
-    
 </div>
+
+<div class="category-block">
+    <h2>Order Popular Categories 🤩</h2>
+
+    <div class="categories">
+        <div *ngFor="let category of categories" class="category-card">
+            <img src="../../../assets/tmp-placeholder.png">
+            <span>{{category.title}}</span>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="wrapper-blue">
+        <div class="foot-2">
+            <span>Order.uk Copyright 2024, All Rights Reserved.</span>
+    
+            <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Do not sell or share my personal information</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>

@@ -1,0 +1,104 @@
+.banner {
+    position: relative;
+
+    height: 600px;
+
+    background-color: #FBFBFB;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: rgba(111, 111, 111, 0.15);
+    margin: 20px 84px;
+}
+
+.text-block {
+    position: absolute;
+    padding: 150px 0px 70px 50px;
+    z-index: 10;
+}
+
+.t1 {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+.t3 {
+    color: var(--my-orange);
+}
+
+.mobile {
+    display: flex;
+    margin-top: 50px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.mobile-store {
+    height: 60px;
+}
+
+.people {
+    position: absolute;
+    height: 537px;
+    bottom: 0;
+    left: 50%; 
+    transform: translate(-50%); 
+    z-index: 5;
+}
+
+.wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 92%;
+    width: 740px;
+
+    background-color: var(--my-orange);
+    border-radius: 240px 0 0 0;
+    background-size: cover;
+    z-index: 1;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    align-items: flex-end;
+    width: 740px;
+}
+
+.note1, .note3{
+    margin-right: 100px;
+    z-index: 10;
+}
+
+.note2 {
+    z-index: 10;
+}
+
+/* .logo {
+    width: 59px;
+    height: 16px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 12px;
+    z-index: 10;
+}
+
+.card-top {
+    display: flex;
+} */

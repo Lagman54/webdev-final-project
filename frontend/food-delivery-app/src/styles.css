@@ -5,5 +5,7 @@
 }
 
 body {
+    min-width: 1640px;
     font-family: 'Poppins';
+    --my-orange: #FC8A06;
 }

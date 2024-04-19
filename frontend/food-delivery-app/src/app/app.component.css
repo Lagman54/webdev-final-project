@@ -28,17 +28,17 @@ a {
 }
 
 a:hover {
-  background-color: gray;
+  background-color: #ffa43b;
 }
 
 .logo {
-  width: 160px;
-  height: 40px;
+  width: 180px;
+  height: 45px;
   padding: 8px 16px;
 }
 
 .active-link {
   color: #fff;
-  background-color: #FC8A06;
+  background-color: var(--my-orange);
   font-weight: 400;
 }

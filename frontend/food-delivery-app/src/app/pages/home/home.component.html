@@ -24,27 +24,12 @@
     <h2>Order Popular Categories 🤩</h2>
 
     <div class="categories">
-        <div *ngFor="let category of categories" class="category-card">
+        <a *ngFor="let category of categories" routerLink="/browse" [queryParams]="{category: category.id}" class="category-card">
             <img src="../../../assets/tmp-placeholder.png">
             <span>{{category.title}}</span>
-        </div>
+        </a>
     </div>
 </div>
 
 
 
-<footer>
-    <div class="wrapper-blue">
-        <div class="foot-2">
-            <span>Order.uk Copyright 2024, All Rights Reserved.</span>
-    
-            <ul>
-                <li><a>Privacy Policy</a></li>
-                <li><a>Terms</a></li>
-                <li><a>Pricing</a></li>
-                <li><a>Do not sell or share my personal information</a></li>
-            </ul>
-        </div>
-    </div>
-
-</footer>

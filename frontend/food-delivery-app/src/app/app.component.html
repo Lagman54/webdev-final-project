@@ -2,13 +2,13 @@
 
   <img class="logo" src="assets/logo.png" alt="Order">
 
-  <ul>
+  <ul class="header-nav">
     <li>
-      <a routerLink="/home" routerLinkActive="active-link">Home</a>
+      <a routerLink="/home" routerLinkActive="active-link" class="nav-link">Home</a>
     </li>
 
     <li>
-      <a routerLink="/restaurants" routerLinkActive="active-link">Restaurants</a>
+      <a routerLink="/browse" routerLinkActive="active-link" [queryParams]="{category: 1}" class="nav-link">Browse menu</a>
     </li>
 
     <li>
@@ -24,3 +24,19 @@
 </header>
 
 <router-outlet></router-outlet>
+
+<footer>
+  <div class="wrapper-blue">
+      <div class="foot-2">
+          <span>Order.uk Copyright 2024, All Rights Reserved.</span>
+  
+          <ul>
+              <li><a class="footer-link">Privacy Policy</a></li>
+              <li><a class="footer-link">Terms</a></li>
+              <li><a class="footer-link">Pricing</a></li>
+              <li><a class="footer-link">Do not sell or share my personal information</a></li>
+          </ul>
+      </div>
+  </div>
+
+</footer>

@@ -2,11 +2,12 @@ import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MenuCategory } from '../../interfaces/menuCategory';
 import { ApiService } from '../../services/api.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -4,7 +4,7 @@ header {
   padding: 24px 64px;
 }
 
-ul {
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -15,11 +15,11 @@ ul {
   font-size: 16px;
 }
 
-li {
+.header-nav li {
   padding: 8px 16px;
 }
 
-a {
+.nav-link {
   cursor: pointer;
   color: #000;
   text-decoration: none;
@@ -27,7 +27,7 @@ a {
   border-radius: 32px;
 }
 
-a:hover {
+.nav-link:hover {
   background-color: #ffa43b;
 }
 
@@ -41,4 +41,51 @@ a:hover {
   color: #fff;
   background-color: var(--my-orange);
   font-weight: 400;
+}
+
+footer {
+  margin-top: 64px;
+}
+
+.wrapper-blue {
+  background-color: #03081F;
+}
+
+.foot-2 {
+  position: relative;
+  width: var(--my-width);
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  height: 73px;
+}
+
+.foot-2 span {
+  flex-grow: 1;
+}
+
+.foot-2 ul {
+  list-style-type: none;
+  align-items: center;
+}
+
+.foot-2 li{
+  display: inline;
+  padding: 0 18px;
+}
+
+li:last-child {
+  padding-right: 0 !important;
+}
+
+.footer-link {
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }

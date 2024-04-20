@@ -5,7 +5,9 @@
 }
 
 body {
+    height: 100vh;
     min-width: 1640px;
     font-family: 'Poppins';
     --my-orange: #FC8A06;
+    --my-width: 1520px;
 }

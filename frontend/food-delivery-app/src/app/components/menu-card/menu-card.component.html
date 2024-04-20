@@ -1,0 +1,21 @@
+<div class="menu-card">
+    <div class="card-desc">
+        <h4 class="menu-title">{{menu.title}}</h4><br>
+        <p class="menu-desc">{{menu.description}}</p><br>
+        <p class="menu-price">KZT {{menu.price}}</p>
+    </div>
+
+    <div class="card-img" [style.backgroundImage]="'url(' + menu.imgUrl + ')'">
+        <div *ngIf="cnt==0; else elseBlock" class="wrapper-gray1">
+            <button class="order-btn" (click)="onAdd(menu)">+</button>
+        </div>
+
+        <ng-template #elseBlock>
+            <div class="wrapper-gray2">
+                <button class="order-btn" (click)="onDecrease(menu)">-</button>
+            <span class="cnt">{{cnt}}</span>
+            <button class="order-btn" (click)="onAdd(menu)">+</button>
+            </div>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li *ngFor="let category of categories" [class.selected]="category.id === selectedCategory" (click)="onSelect(category.id)">
+            {{category.title}}
+        </li>
+    </ul>
+</nav>
+
+<div class="menus-container">
+    <div *ngFor="let menu of menus">
+        <app-menu-card [menu]="menu"></app-menu-card>
+    </div>
+</div>

@@ -2,7 +2,7 @@
     position: relative;
 
     height: 600px;
-    width: 1520px;
+    width: var(--my-width);
 
     left: 50%;
     transform: translateX(-50%);
@@ -30,14 +30,6 @@ h1 {
 
 .t3 {
     color: var(--my-orange);
-}
-
-a {
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .mobile-store {
@@ -89,7 +81,7 @@ a:hover {
 
 .category-block {
     position: relative;
-    width: 1520px;
+    width: var(--my-width);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -106,6 +98,9 @@ a:hover {
 }
 
 .category-card {
+    text-decoration: none;
+    color: #000;
+
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -120,41 +115,7 @@ a:hover {
     font-weight: 800;
 }
 
-footer {
-    margin-top: 64px;
+.category-card:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
 }
 
-.wrapper-blue {
-    background-color: #03081F;
-}
-
-.foot-2 {
-    position: relative;
-    width: 1520px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 15px;
-    height: 73px;
-}
-
-.foot-2 span {
-    flex-grow: 1;
-}
-
-.foot-2 ul {
-    list-style-type: none;
-    align-items: center;
-}
-
-.foot-2 li{
-    display: inline;
-    padding: 0 18px;
-}
-
-li:last-child {
-    padding-right: 0 !important;
-}

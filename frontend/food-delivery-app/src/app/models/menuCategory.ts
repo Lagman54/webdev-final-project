@@ -1,5 +1,5 @@
 export interface MenuCategory {
     id: number,
-    title: string,
+    name: string,
     imgUrl: string,
 }

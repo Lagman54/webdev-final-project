@@ -11,3 +11,8 @@ body {
     --my-orange: #FC8A06;
     --my-width: 1520px;
 }
+
+app-browse-menu, app-profile, app-cart {
+    display: block;
+    height: 100vh;
+}

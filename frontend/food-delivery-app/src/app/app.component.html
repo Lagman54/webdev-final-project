@@ -8,15 +8,15 @@
     </li>
 
     <li>
-      <a routerLink="/browse" routerLinkActive="active-link" [queryParams]="{category: 1}" class="nav-link">Browse menu</a>
+      <a routerLink="/browse" routerLinkActive="active-link" [queryParams]="{category: 1}" [routerLinkActiveOptions]="{exact: false}" class="nav-link">Browse menu</a>
     </li>
 
     <li>
-      <a>Profile</a>
+      <a routerLink="/profile" routerLinkActive="active-link" class="nav-link">Profile</a>
     </li>
 
     <li>
-      <a>Cart</a>
+      <a routerLink="/cart" routerLinkActive="active-link" class="nav-link">Cart</a>
     </li>
 
   </ul>
@@ -28,7 +28,7 @@
 <footer>
   <div class="wrapper-blue">
       <div class="foot-2">
-          <span>Order.uk Copyright 2024, All Rights Reserved.</span>
+          <span>Order.kz Copyright 2024, All Rights Reserved.</span>
   
           <ul>
               <li><a class="footer-link">Privacy Policy</a></li>

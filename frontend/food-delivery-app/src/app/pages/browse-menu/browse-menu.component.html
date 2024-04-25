@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <li *ngFor="let category of categories" [class.selected]="category.id === selectedCategory" (click)="onSelect(category.id)">
-            {{category.title}}
+            {{category.name}}
         </li>
     </ul>
 </nav>

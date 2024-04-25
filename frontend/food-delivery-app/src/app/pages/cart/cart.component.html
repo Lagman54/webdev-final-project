@@ -1,0 +1,12 @@
+<ng-container *ngIf="logged">
+    <div class="menus-container">
+        <div *ngFor="let item of orderItems">
+            <app-menu-card [menu]="item.product" [cnt]="item.quantity"></app-menu-card>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="!logged">
+    <h1>You need to authorize</h1>
+</ng-container>

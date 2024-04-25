@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin-top: 50px;
+
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+
+}

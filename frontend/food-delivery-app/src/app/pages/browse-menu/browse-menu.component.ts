@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Menu } from '../../interfaces/menu';
+import { Menu } from '../../models/menu';
 import { NgClass, NgFor } from '@angular/common';
-import { MenuCategory } from '../../interfaces/menuCategory';
+import { MenuCategory } from '../../models/menuCategory';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../../services/api.service';
 import { MenuCardComponent } from '../../components/menu-card/menu-card.component';
@@ -27,12 +27,12 @@ export class BrowseMenuComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.categories = this.apiService.getMenuCategoryList()
+    this.apiService.getMenuCategoryList().subscribe(data => this.categories = data)
 
     this.route.queryParams.subscribe(params => {
       let categoryId = Number(params['category'])
       this.selectedCategory = categoryId
-      this.menus = this.apiService.getMenusByCategory(categoryId)
+      this.apiService.getMenusByCategory(categoryId).subscribe(data => this.menus = data)
     })
     
   }

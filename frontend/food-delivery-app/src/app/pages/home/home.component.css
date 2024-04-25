@@ -93,7 +93,7 @@ h1 {
 
 .categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 
@@ -110,6 +110,11 @@ h1 {
     border: 1px solid #0000001A;
 }
 
+.category-card img {
+    width: 238px;
+    height: 203px;
+}
+
 .category-card span {
     padding: 10px 18px 12px;
     font-weight: 800;
@@ -119,3 +124,14 @@ h1 {
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.36);
 }
 
+
+.menus-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+    position: relative;
+    width: var(--my-width);
+    left:50%;
+    transform: translate(-50%);
+}
